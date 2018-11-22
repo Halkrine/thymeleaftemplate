@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	data-layout-decorate="~{layout/default}"
+	>
+	
+<head>
+<title>메인 페이</title>
+<script th:inline="javascript">
+
+$(function () {
+	
+	var result =/*[[${msg}]]*/ 'default';
+	
+	if(result == 'success'){
+		alert("처리가 완료되었습니다.");
+	}
+	
+    
+  });
+
+</script>
+</head>
+
+
+<div layout:fragment="content">
+  <div class="content-wrapper">
+    <section class="content-header">
+      <h1>ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ</h1>
+     </section>
+</div>
+</div>
+
+
+</html>
